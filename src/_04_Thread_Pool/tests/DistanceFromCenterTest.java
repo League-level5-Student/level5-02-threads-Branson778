@@ -77,6 +77,9 @@ class DistanceFromCenterTest {
 		multiEndTime = System.nanoTime();
 		elapsedTimeMulti = (double) (multiEndTime - startTime) / 1_000_000_000.0;
 		System.out.println("milt-thread time: " + elapsedTimeMulti + " seconds");
+		System.out.println(pix2[201031680]);
+		System.out.println(pix1[201031680]);
+		System.out.println(pix1.length + ", "+ pix2.length);
 		assertArrayEquals(pix1, pix2);
 		System.out.println("Arrays are a match");
 		assertTrue(singleEndTime < multiEndTime);
